@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pac-Man</title>
+    <script type="module" crossorigin src="./assets/index-D_YLK-50.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DGP8SQ4X.css">
+  </head>
+  <body>
+    <header class="header-principal">
+      <nav class="nav-principal">
+        <a href="#" class="logo">
+          <img src="./assets/logo-Btr1w4VI.svg" alt="logo" />
+        </a>
+
+        <div class="elements">
+          <ul class="elements-list">
+            <li id="lives" class="live-pacman">
+              LIVES
+              <span id="lives-value"></span>
+            </li>
+            <li id="score" class="score-pacman">
+              HI - SCORE
+              <span id="score-value">0</span>
+            </li>
+            <li><img src="data:image/svg+xml,%3csvg%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.75%2016.9999V4H16.9999V16.9999H11.75ZM4%2016.9999V4H9.24995V16.9999H4ZM13.2499%2015.5H15.5V5.49996H13.2499V15.5ZM5.49996%2015.5H7.74998V5.49996H5.49996V15.5Z'%20fill='%23FFFF00'/%3e%3c/svg%3e" alt="Button" /></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="overlap">
+          <canvas class="board-game" id="board"> </canvas>
+          <div class="imageOverlap" id="overlap"></div>
+          <div class="game-start"></div>
+          <button class="btn-game-start" id="btn-start">
+            <i class="ri-play-large-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-btns">
+        <div class="btns" id="controls">
+          <button class="button1" data-code="ArrowUp">
+            <i class="ri-arrow-up-s-line"></i>
+          </button>
+          <button class="button2" data-code="ArrowDown">
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <button class="button3" data-code="ArrowLeft">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+
+          <button class="button4" data-code="ArrowRight">
+            <i class="ri-arrow-drop-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
