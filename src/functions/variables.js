@@ -1,8 +1,8 @@
 //================ Varible para sonidos =====================//
-export const eatSound = new Audio("../../assets/sounds/eat.mp3");
-export const deathSound = new Audio("../../assets/sounds/death.mp3");
-export const victorySound = new Audio("../../assets/sounds/victory.mp3");
-export const musicPacman = new Audio("../../assets/sounds/pacman-song.mp3");
+export const eatSound = new Audio("/pacmanjs/assets/sounds/eat.mp3");
+export const deathSound = new Audio("/pacmanjs/assets/sounds/death.mp3");
+export const victorySound = new Audio("/pacmanjs/assets/sounds/victory.mp3");
+export const musicPacman = new Audio("/pacmanjs/assets/sounds/pacman-song.mp3");
 //Establecer un volúmen de un 30%.
 eatSound.volume = 0.1;
 deathSound.volume = 0.1;

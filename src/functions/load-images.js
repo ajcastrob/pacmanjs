@@ -12,23 +12,23 @@ export let wallImage;
 // ===================== Cargas imágenes ============================
 export function loadImages() {
   wallImage = new Image();
-  wallImage.src = "../../assets/wall.svg";
+  wallImage.src = "/pacmanjs/assets/wall.svg";
 
   blueGhostImage = new Image();
-  blueGhostImage.src = "../../assets/blueGhost.svg";
+  blueGhostImage.src = "/pacmanjs/assets/blueGhost.svg";
   orangeGhostImage = new Image();
-  orangeGhostImage.src = "../../assets/orangeGhost.svg";
+  orangeGhostImage.src = "/pacmanjs/assets/orangeGhost.svg";
   pinkGhostImage = new Image();
-  pinkGhostImage.src = "../../assets/pinkGhost.svg";
+  pinkGhostImage.src = "/pacmanjs/assets/pinkGhost.svg";
   redGhostImage = new Image();
-  redGhostImage.src = "../../assets/redGhost.svg";
+  redGhostImage.src = "/pacmanjs/assets/redGhost.svg";
 
   pacmanUpImage = new Image();
-  pacmanUpImage.src = "../../assets/pacmanUp.svg";
+  pacmanUpImage.src = "/pacmanjs/assets/pacmanUp.svg";
   pacmanDownImage = new Image();
-  pacmanDownImage.src = "../../assets/pacmanDown.svg";
+  pacmanDownImage.src = "/pacmanjs/assets/pacmanDown.svg";
   pacmanLeftImage = new Image();
-  pacmanLeftImage.src = "../../assets/pacmanLeft.svg";
+  pacmanLeftImage.src = "/pacmanjs/assets/pacmanLeft.svg";
   pacmanRightImage = new Image();
-  pacmanRightImage.src = "../../assets/pacmanRight.svg";
+  pacmanRightImage.src = "/pacmanjs/assets/pacmanRight.svg";
 }
