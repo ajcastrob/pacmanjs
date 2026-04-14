@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$font-primary: "Space Grotesk", sans-serif;
+/// Copy text color
+
+/// Container's maximum width
+/// @type Length
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+$bp-desktop-primary: 1900px;
+
+$tablet: $bp-tablet;
+$tablethorizontal: $bp-tablet-horizontal;
+$desktop: $bp-desktop;
+$desktop-xl: $bp-desktop-xl;
+$desktop-primary: $bp-desktop-primary;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: "/assets/" !default;

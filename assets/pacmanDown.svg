@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <radialGradient id="pacGradient" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff9c4"/>
+      <stop offset="20%" stop-color="#ffeb3b"/>
+      <stop offset="100%" stop-color="#f9a825"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <path d="M 16 16 L 24.5 24.5 A 12 12 0 1 0 7.5 24.5 Z" fill="url(#pacGradient)" filter="url(#glow)"/>
+</svg>

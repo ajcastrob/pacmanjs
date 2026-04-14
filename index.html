@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pac-Man</title>
+  </head>
+  <body>
+    <header class="header-principal">
+      <nav class="nav-principal">
+        <a href="#" class="logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </a>
+
+        <div class="elements">
+          <ul class="elements-list">
+            <li id="lives" class="live-pacman">
+              LIVES
+              <span id="lives-value"></span>
+            </li>
+            <li id="score" class="score-pacman">
+              HI - SCORE
+              <span id="score-value">0</span>
+            </li>
+            <li><img src="./assets/Button.svg" alt="Button" /></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="overlap">
+          <canvas class="board-game" id="board"> </canvas>
+          <div class="imageOverlap" id="overlap"></div>
+          <div class="game-start"></div>
+          <button class="btn-game-start" id="btn-start">
+            <i class="ri-play-large-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-btns">
+        <div class="btns" id="controls">
+          <button class="button1" data-code="ArrowUp">
+            <i class="ri-arrow-up-s-line"></i>
+          </button>
+          <button class="button2" data-code="ArrowDown">
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <button class="button3" data-code="ArrowLeft">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+
+          <button class="button4" data-code="ArrowRight">
+            <i class="ri-arrow-drop-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

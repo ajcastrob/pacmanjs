@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  #board {
+    background-color: black;
+  }
+}
+
+.overlap {
+  position: relative;
+}
+
+.imageOverlap {
+  position: absolute;
+  width: 380px;
+  height: 420px;
+  border: 1px solid #ffff00;
+  background-color: black;
+  background-image: url("../../assets/fondo.svg");
+  background-repeat: no-repeat;
+  background-position: center left 7px;
+  top: 0;
+}
