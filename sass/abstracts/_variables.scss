@@ -2,18 +2,26 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
-/// @type List
-$font-primary: "Space Grotesk", sans-serif;
-/// Copy text color
+// Typography
+$font-display: "Orbitron", sans-serif;
+$font-body: "Rajdhani", sans-serif;
 
-/// Container's maximum width
-/// @type Length
+// Neon Color Palette
+$neon-yellow: #ffcc00;
+$neon-cyan: #00ffff;
+$neon-magenta: #ff00ff;
+$neon-green: #39ff14;
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+// Background Colors
+$dark-bg: #0a0a0f;
+$dark-surface: #141419;
+$dark-border: #2a2a35;
 
+// Text Colors
+$text-primary: #ffffff;
+$text-secondary: #a0a0b0;
+
+// Breakpoints
 $bp-tablet: 768px;
 $bp-tablet-horizontal: 1024px;
 $bp-desktop: 1200px;
@@ -26,8 +34,5 @@ $desktop: $bp-desktop;
 $desktop-xl: $bp-desktop-xl;
 $desktop-primary: $bp-desktop-primary;
 
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'https://cdn.example.com/assets/';
+// Base URL
 $base-url: "/assets/" !default;

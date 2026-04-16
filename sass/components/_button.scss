@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+@use "sass:color";
 @use "../abstracts" as ab;
 .container-btns {
   display: flex;
@@ -20,13 +21,37 @@
 }
 
 button {
-  background-color: #171717;
+  background-color: ab.$dark-surface;
   width: 64px;
   height: 64px;
-  border: 1px solid #00ffff;
-  border-radius: 10px;
+  border: 2px solid ab.$neon-cyan;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 
+    0 0 8px rgba(ab.$neon-cyan, 0.3),
+    inset 0 0 12px rgba(ab.$neon-cyan, 0.1);
   i {
-    color: #00ffff;
+    color: ab.$neon-cyan;
+    font-size: 28px;
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    border-color: ab.$neon-cyan;
+    box-shadow: 
+      0 0 16px rgba(ab.$neon-cyan, 0.5),
+      0 0 32px rgba(ab.$neon-cyan, 0.3),
+      inset 0 0 16px rgba(ab.$neon-cyan, 0.2);
+    transform: scale(1.05);
+    i {
+      color: color.adjust(ab.$neon-cyan, $lightness: 15%);
+    }
+  }
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 
+      0 0 4px rgba(ab.$neon-cyan, 0.4),
+      inset 0 0 20px rgba(ab.$neon-cyan, 0.3);
   }
 }
 
@@ -34,9 +59,27 @@ button {
   position: absolute;
   bottom: 70px;
   left: 170px;
-  border: 1px solid #ffff00;
+  width: 80px;
+  height: 80px;
+  border: 2px solid ab.$neon-yellow;
+  background-color: rgba(ab.$neon-yellow, 0.1);
+  box-shadow: 
+    0 0 12px rgba(ab.$neon-yellow, 0.4),
+    inset 0 0 16px rgba(ab.$neon-yellow, 0.15);
   i {
-    color: #ffff00;
+    color: ab.$neon-yellow;
+    font-size: 36px;
+  }
+  &:hover {
+    border-color: ab.$neon-yellow;
+    box-shadow: 
+      0 0 24px rgba(ab.$neon-yellow, 0.6),
+      0 0 48px rgba(ab.$neon-yellow, 0.3),
+      inset 0 0 24px rgba(ab.$neon-yellow, 0.25);
+    transform: scale(1.08);
+  }
+  &:active {
+    transform: scale(0.95);
   }
 }
 

@@ -19,11 +19,3 @@ export const colCount = 19;
 export const tileSize = 20; //tamaño en pixels de cada cuadrícula.
 export const boardWidht = colCount * tileSize;
 export const boardHeigth = rowCount * tileSize;
-
-//==============Colección de entidades ======================//
-// Set que define las paredes. Evita duplicados.
-export const walls = new Set();
-// Set que define food. Evita duplicados. Puntos de comida.
-export const foods = new Set();
-// Set que define todos los fantamas.
-export const ghosts = new Set();

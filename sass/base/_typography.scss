@@ -1,9 +1,14 @@
 @use "../abstracts" as ab;
 
-/**
- * Basic typography style for copy text
- */
-
 body {
-  font-family: ab.$font-primary;
+  font-family: ab.$font-body;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: ab.$font-display;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

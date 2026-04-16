@@ -19,24 +19,40 @@
     gap: 10px;
   }
   p {
-    color: #ffff00;
+    color: ab.$neon-yellow;
   }
   a {
-    color: #ffff00;
+    font-family: ab.$font-display;
+    font-size: 11px;
+    color: ab.$neon-yellow;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
     &::after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: 0;
       left: 0;
       width: 100%;
-      height: 2px;
-      background-color: #ffff00;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, ab.$neon-yellow, transparent);
       transition: width 0.3s ease;
     }
-
-    &:hover::after {
-      width: 0;
+    &:hover {
+      text-shadow: 0 0 12px rgba(ab.$neon-yellow, 0.6);
+      &::after {
+        width: 0;
+      }
+    }
+  }
+  img {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 1;
+      filter: drop-shadow(0 0 8px rgba(ab.$neon-yellow, 0.5));
     }
   }
 }

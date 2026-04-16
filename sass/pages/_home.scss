@@ -1,7 +1,49 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+@use "../abstracts" as ab;
 
 body {
-  background-color: black;
+  background-color: ab.$dark-bg;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(ellipse at 20% 20%, rgba(ab.$neon-cyan, 0.03) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(ab.$neon-magenta, 0.02) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(ab.$neon-yellow, 0.02) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(rgba(ab.$neon-cyan, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(ab.$neon-cyan, 0.015) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+header, footer {
+  position: relative;
+  z-index: 2;
 }
