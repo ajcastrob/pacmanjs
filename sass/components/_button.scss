@@ -28,7 +28,7 @@ button {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 
+  box-shadow:
     0 0 8px rgba(ab.$neon-cyan, 0.3),
     inset 0 0 12px rgba(ab.$neon-cyan, 0.1);
   i {
@@ -38,7 +38,7 @@ button {
   }
   &:hover {
     border-color: ab.$neon-cyan;
-    box-shadow: 
+    box-shadow:
       0 0 16px rgba(ab.$neon-cyan, 0.5),
       0 0 32px rgba(ab.$neon-cyan, 0.3),
       inset 0 0 16px rgba(ab.$neon-cyan, 0.2);
@@ -49,7 +49,7 @@ button {
   }
   &:active {
     transform: scale(0.95);
-    box-shadow: 
+    box-shadow:
       0 0 4px rgba(ab.$neon-cyan, 0.4),
       inset 0 0 20px rgba(ab.$neon-cyan, 0.3);
   }
@@ -58,12 +58,12 @@ button {
 .btn-game-start {
   position: absolute;
   bottom: 70px;
-  left: 170px;
+  left: 155px;
   width: 80px;
   height: 80px;
   border: 2px solid ab.$neon-yellow;
   background-color: rgba(ab.$neon-yellow, 0.1);
-  box-shadow: 
+  box-shadow:
     0 0 12px rgba(ab.$neon-yellow, 0.4),
     inset 0 0 16px rgba(ab.$neon-yellow, 0.15);
   i {
@@ -72,7 +72,7 @@ button {
   }
   &:hover {
     border-color: ab.$neon-yellow;
-    box-shadow: 
+    box-shadow:
       0 0 24px rgba(ab.$neon-yellow, 0.6),
       0 0 48px rgba(ab.$neon-yellow, 0.3),
       inset 0 0 24px rgba(ab.$neon-yellow, 0.25);
